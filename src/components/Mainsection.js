@@ -24,18 +24,18 @@ function MainPage(){
             <h3 style={{textAlign: "center", fontSize: "50px"}}>Algorithm Visualiser</h3>
             <div className="card" style={{padding: "150px"}}>
                 <div className='individualCard' onClick={sortClicked}>
-                    <img src = {Sort} />
+                    <img src = {Sort} alt="SortAlgorithms" />
                     <h2>Sorting</h2>
                 </div>
                     
                 <div className='individualCard' onClick={searchClicked}>
-                    <img src={Search} />
+                    <img src = {Search} alt="SearchAlgorithms" />
                     <h2>Searching</h2>
                     
                 </div>
                     
                 <div className='individualCard' onClick={graphClicked}>
-                    <img src = {Graph} />
+                    <img src = {Graph} alt="GraphAlgorithms" />
                     <h2>Graph Algos</h2>
                 </div>
             </div>

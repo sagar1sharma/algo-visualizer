@@ -22,7 +22,7 @@
 
 .individualCard{
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   transition: .2s;
   border-radius: 20px;
 }
@@ -32,3 +32,46 @@
   cursor: pointer;
   background-color: beige;
 }
+
+.number-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.number-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 8px;
+  margin: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #EEEEEE;
+}
+
+.number-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: #e80808;
+  min-height: 10px;
+  margin-top: 5px; /* Added margin to create spacing between bar and number */
+}
+
+
+
+
+.generate-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
