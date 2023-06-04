@@ -22,6 +22,7 @@ function dobinarySearch(arr, number, animations){
         }
         animations.push({indices: [mid], type: "comp", color: "green"});
     }
+    
 }
 
 export default BinarySearch;
