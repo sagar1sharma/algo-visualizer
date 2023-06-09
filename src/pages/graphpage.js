@@ -1,9 +1,14 @@
-function graphpage(){
-    return(
-        <div>
-            Design Graph page with same design language as home page
-        </div>
-    )
+import Graph from "../algorithms/graphtraversal";
+import Header from "../components/AltHeader";
+
+function graphpage() {
+  return (
+    <div>
+      <div className="mainpage">
+        <Graph />
+      </div>
+    </div>
+  );
 }
 
 export default graphpage;

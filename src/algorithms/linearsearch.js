@@ -8,7 +8,7 @@ function dolinearSearch(arr, number, animations){
     for(let i = 0; i < arr.length; i++){
         animations.push({indices: [i], type: "comp", color: "red"});
     
-        if(number == arr[i]){
+        if(number === arr[i]){
             break;
         }
 
