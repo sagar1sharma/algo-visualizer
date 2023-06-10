@@ -43,14 +43,12 @@ const ForceGraph = ({ nodes, links }) => {
       .attr('fill', 'steelblue');
 
     return () => {
-      // Cleanup simulation when component unmounts
       simulation.stop();
     };
   }, [nodes, links]);
 
   return (
-    <svg ref={svgRef} width="1440" height="800" justify-content = "center" alignItems= "center">
-      {/* Add any additional SVG elements or labels here */}
+    <svg ref={svgRef} width="1440" height="800">
     </svg>
   );
 };
