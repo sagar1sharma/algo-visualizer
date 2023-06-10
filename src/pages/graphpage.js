@@ -1,14 +1,16 @@
-import Graph from "../algorithms/graphtraversal";
-import Header from "../components/AltHeader";
+import React from 'react';
+import Header from '../components/Header';
+import ForceGraph from '../components/graph';
+import Data from '../components/data.json';
 
-function graphpage() {
+const App = () => {
   return (
     <div>
-      <div className="mainpage">
-        <Graph />
-      </div>
+      <Header />
+      <div className='graphpage'>
+      <ForceGraph nodes={Data.nodes} links={Data.links} /></div>
     </div>
   );
-}
+};
 
-export default graphpage;
+export default App;

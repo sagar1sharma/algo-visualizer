@@ -43,7 +43,7 @@
 
 .number-box {
   background-color: green;
-  width: 10px;
+  width: 0.5vw;
   margin: 3px;
   box-shadow: 3px 3px grey;
 }
@@ -79,4 +79,20 @@
   background-color: wheat;
   cursor: pointer;
   transform: scale(1.1);
+}
+
+ellipse{
+  position: absolute;
+width: 42px;
+height: 42px;
+top: 380.3px;
+left: 698.3px;
+
+background: #9F9F9F;
+border-radius: 21px;
+}
+
+.graphpage{
+  justify-content: auto;
+  align-items: auto;
 }
