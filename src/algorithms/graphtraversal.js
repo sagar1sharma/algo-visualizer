@@ -10,18 +10,15 @@ const GraphTraversal = ({ data, setTraversal }) => {
 
   data.links.forEach((link) => {
     if (!graph[link.source]) {
-      console.error(`Invalid source: ${link.source}`);
       return;
     }
     if (!graph[link.target]) {
-      console.error(`Invalid target: ${link.target}`);
       return;
     }
     graph[link.source].push(link.target);
     graph[link.target].push(link.source);
   });
 
-  console.log("Graph:", graph);
 
   const dfs = (graph, startNode) => {
     let stack = [startNode];
@@ -81,9 +78,15 @@ const GraphTraversal = ({ data, setTraversal }) => {
 
   return (
     <div>
-      <button onClick={handleDFSClick}>DFS</button>
-      <button onClick={handleBFSClick}>BFS</button>
-      <p>{traversalResult.join(" -> ")}</p>
+      <div className="card" style={{padding: "50px"}}>
+                    <div className='mybutton' style = {{position: "absolute", top: "300px", right: '150px'}} onClick={handleDFSClick} >
+                        <h2>Depth First Search</h2>
+                    </div>
+                    
+                    <div className='mybutton' style = {{position: 'absolute', top: '400px', right: '130px'}} onClick={handleBFSClick}>
+                        <h2>Breadth First Search</h2> 
+                    </div>
+                </div>
     </div>
   );
 };

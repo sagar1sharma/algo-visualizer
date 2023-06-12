@@ -73,7 +73,7 @@ const ForceGraph = ({ nodes, links, startNode, traversal }) => {
           return "steelblue";
         });
         i++;
-      }, 1000);
+      }, 500);
     }
 
     return () => {

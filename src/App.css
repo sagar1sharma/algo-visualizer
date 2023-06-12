@@ -94,3 +94,25 @@ ellipse {
   justify-content: auto;
   align-items: auto;
 }
+
+.graphbutton {
+  border: 2px solid black;
+  padding: 5px;
+  transition: 0.2s;
+  border-radius: 20px;
+  height: 36px;
+  display: flex;
+  position:absolute;
+  top: 20px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #856464;
+  color: white;
+}
+
+.graphbutton:hover {
+  background-color: wheat;
+  cursor: pointer;
+  transform: scale(1.1);
+}
