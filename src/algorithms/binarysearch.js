@@ -17,7 +17,7 @@ function dobinarySearch(arr, number, animations){
         else if(number > arr[mid]){
             lo = mid + 1;
         }
-        else{
+        else if(number == arr[mid]){
             break;
         }
         animations.push({indices: [mid], type: "comp", color: "green"});
