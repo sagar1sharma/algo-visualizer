@@ -1,5 +1,4 @@
 import Graph from "../algorithms/graphtraversal";
-import Header from "../components/AltHeader";
 
 function graphpage() {
   return (
