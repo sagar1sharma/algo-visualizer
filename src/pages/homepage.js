@@ -1,13 +1,13 @@
-import Header from '../components/Header';
-import Mainsection from '../components/Mainsection';
+import Header from "../components/Header";
+import Mainsection from "../components/Mainsection";
 
-function homepage(){
-    return(
-        <div>
-            <Header />
-            <Mainsection />
-        </div>
-    )
+function Homepage() {
+  return (
+    <div>
+      <Header />
+      <Mainsection />
+    </div>
+  );
 }
 
-export default homepage;
+export default Homepage;
